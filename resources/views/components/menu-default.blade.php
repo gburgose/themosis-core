@@ -1,0 +1,1 @@
+{{ wp_nav_menu(['menu_class' => 'nav navbar-nav ml-auto', 'container' => '' ]) }}
