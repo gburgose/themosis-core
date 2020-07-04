@@ -1,10 +1,9 @@
 @setup
-$site_name = 'ingecc';
+$site_name = 'example.cl';
 $ssh_user = 'forge';
-$server_ip = '142.93.7.236';
-$server_base_path = '/home/forge/' . $site_name . '.cl';
-//$sync_folder =  '/storage/app/public/'; // Laravel | Based on the base path of the project
-$sync_folder =  '/htdocs/content/uploads/'; // Themosis | Based on the base path of the project
+$server_ip = 'x.x.x.x';
+$server_base_path = '/home/forge/' . $site_name;
+$sync_folder =  '/htdocs/content/uploads/';
 
 $ssh_connection = $ssh_user.'@'.$server_ip;
 @endsetup
