@@ -6,7 +6,7 @@
     <ul>
         <li>Nombre: {{ $name }}</li>
         <li>Email: {{ $email }}</li>
-        <li>Asjunto: {{ $subject}}</li>
+        <li>Asunto: {{ $subject}}</li>
     </ul>
     <blockquote>
         {!! nl2br($content) !!}
