@@ -1,0 +1,20 @@
+// IMPORTACIÓN DE FUENTES
+// @import "./../fonts/helvetica/stylesheet.css";
+
+$font-family: "Helvetica", sans-serif;
+
+//COLORS
+$m-black: #181818;
+$m-gray: #989898;
+$m-gray-light: #f7f7f7;
+
+// Breakpoints
+$mq-breakpoints: (
+  mini: 320px,
+  small: 375px,
+  medium: 768px,
+  large: 992px,
+  laptop: 1280px,
+  huge: 1440px,
+  max: 1920px,
+);

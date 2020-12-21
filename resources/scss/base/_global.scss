@@ -1,0 +1,17 @@
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $font-family;
+  font-size: 16px;
+  color: $m-black;
+}
+* {
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}

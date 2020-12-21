@@ -1,0 +1,11 @@
+@keyframes scaleOut {
+    from {
+        transform: none;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    to {
+        transform: none;
+    }
+}
