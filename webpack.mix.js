@@ -15,17 +15,19 @@ const url = process.env.APP_URL;
 const dist = "./htdocs/dist";
 
 mix
+  .setPublicPath("./htdocs/dist")
   .setResourceRoot("./")
-  .setPublicPath(dist)
-  .js("resources/js/app.js", dist)
-  .sass("resources/scss/app.scss", dist)
-  .copy("resources/images", `${dist}/images`)
-  .extract()
-  .sourceMaps()
+  .js("resources/js/app.js", "htdocs/dist/")
+  .js('node_modules/popper.js/dist/popper.js', 'public/js').sourceMaps()
+  .sass("resources/scss/app.scss", "htdocs/dist/")
+  .copy("resources/images", "htdocs/dist/images")
   .autoload({
-    jquery: ["$", "window.jQuery", "jQuery"]
+    jquery: ["$", "window.jQuery", "jQuery"],
+    axios: "axios",
+    vue: "Vue"
   })
   .browserSync(url);
+
 
 // Full API
 // mix.js(src, output);

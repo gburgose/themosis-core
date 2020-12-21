@@ -131,5 +131,13 @@ class Application extends Hookable
             $path =  $_SERVER['DOCUMENT_ROOT'] . '/acf-json';
             return $path;
         });
+
+        /*
+        |--------------------------------------------------------------------------
+        | Assets
+        |--------------------------------------------------------------------------
+        */
+        Asset::add('app-css', 'app.css', [], date('dmYHis'), 'all')->to();
+        Asset::add('app-js', 'app.js', [], date('dmYHis'), true)->to();
     }
 }
