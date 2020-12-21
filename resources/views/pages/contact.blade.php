@@ -2,6 +2,8 @@
 
 @section('content')
     @include('components.header-default')
-    contact page
+    <div class="container">
+        contact page
+    </div>
     @include('components.footer-default')
 @endsection

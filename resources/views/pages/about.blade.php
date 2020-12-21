@@ -2,6 +2,8 @@
 
 @section('content')
     @include('components.header-default')
-    about page
+    <div class="container">
+        about page
+    </div>
     @include('components.footer-default')
 @endsection
