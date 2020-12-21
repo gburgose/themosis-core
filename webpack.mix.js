@@ -21,6 +21,7 @@ mix
   .js('node_modules/popper.js/dist/popper.js', 'public/js').sourceMaps()
   .sass("resources/scss/app.scss", "htdocs/dist/")
   .copy("resources/images", "htdocs/dist/images")
+  .copy("resources/favicons", "htdocs/dist/favicons")
   .autoload({
     jquery: ["$", "window.jQuery", "jQuery"],
     axios: "axios",
